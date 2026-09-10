@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "story": "familyzoo-v11",
+  "seed": 42,
+  "cards": [
+    {
+      "type": "opening",
+      "assertions": {
+        "channels": [
+          {
+            "id": "info.title",
+            "is": "Family Zoo (v11 — Characters)"
+          },
+          {
+            "id": "info.description",
+            "is": "Sharpee tutorial step 11 — people in the world and what they say."
+          }
+        ]
+      }
+    },
+    {
+      "type": "boot",
+      "assertions": {
+        "contains": [
+          "Zoo Entrance",
+          "Your family piles out of the car, buzzing with excitement — a whole day at the zoo! You st"
+        ]
+      }
+    },
+    {
+      "type": "turn",
+      "command": "south",
+      "assertions": {
+        "contains": [
+          "Main Path",
+          "A wide gravel path winds through the heart of the zoo. Colorful direction signs point ever"
+        ]
+      }
+    },
+    {
+      "type": "turn",
+      "command": "x zookeeper",
+      "assertions": {
+        "contains": [
+          "A friendly zookeeper in khaki overalls. A name tag reads \"Sam.\""
+        ]
+      }
+    },
+    {
+      "type": "turn",
+      "command": "talk to zookeeper",
+      "assertions": {
+        "contains": [
+          "The zookeeper doesn't respond."
+        ]
+      }
+    }
+  ]
+}
