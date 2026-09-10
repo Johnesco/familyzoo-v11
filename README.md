@@ -1,32 +1,30 @@
-# Family Zoo — v11 — Non-Player Characters
+# Family Zoo — v11: Characters
 
-A patrolling zookeeper and a chatty parrot bring the zoo to life. Walks through the three-part NPC system — trait, behavior, plugin — and how to write custom behavior reactions.
+Sam the zookeeper. A person is created like anything else, but carries conversation and reacts to the player being in the room.
 
-Step 11 of the [Family Zoo](https://github.com/Johnesco/familyzoo) tutorial — a progressive walkthrough of the [Sharpee](https://sharpee.net) TypeScript interactive fiction engine, from a single room to a full multi-file story.
+Step 11 of sixteen in the [Family Zoo](https://github.com/Johnesco/familyzoo) tutorial for [Chord](https://sharpee.net/chord/), the authoring language of the [Sharpee](https://sharpee.net) interactive fiction engine.
 
-## What this step teaches
+## What this step adds
 
-- NpcTrait, ActorTrait with isPlayer false, and the NpcPlugin
-- Built-in behaviors: patrol, wanderer, follower, guard, passive
-- Custom NpcBehavior implementations with onTurn and onPlayerEnters hooks
-- NpcAction types: move, speak, emote, wait, take, drop
-- NpcContext giving behaviors access to world, npc, and player state
+- `a person` and where they stand
+- `on the player talking to` for conversation
+- Describing someone doing something, not just standing there
+- Why the room description mentions them separately
 
-## Playing
+## The source
 
-Open `play.html`, or preview the folder:
+The whole step is one file: [`familyzoo-v11.story`](./familyzoo-v11.story) — the step before it plus the ideas above. The chapter that walks through it is [`docs/v11-characters.md`](./docs/v11-characters.md).
 
-```bash
-python -m http.server 8000 --directory familyzoo-v11
-```
-
-## Building
-
-This is a **frozen 0.9.x TypeScript version**. The built player in this folder is the published artifact; it is re-laid from `browser/` by the workspace build:
+## Playing and testing
 
 ```bash
-python ../tools/build.py familyzoo-v11
-python C:/code/ifhub/tools/ship.py familyzoo-v11
+npx sharpee play
+npx sharpee test          # replays familyzoo-v11.tests.json
+python ../tools/build.py familyzoo-v11 --force
 ```
 
-The authoring tree for every version lives in the [familyzoo](https://github.com/Johnesco/familyzoo) repo.
+## Engine
+
+Pinned to `@sharpee/*` **5.3.0** (Chord 3.6.0), held there by an `overrides` block: 5.3.1 publishes broken subpath exports and breaks `sharpee test`.
+
+The 0.9.x TypeScript edition this replaced is kept in [`legacy/`](./legacy).
