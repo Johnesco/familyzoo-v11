@@ -1,10 +1,6 @@
 {
-  "version": 1,
-  "story": "familyzoo-v11",
-  "seed": 42,
   "cards": [
     {
-      "type": "opening",
       "assertions": {
         "channels": [
           {
@@ -16,44 +12,51 @@
             "is": "Sharpee tutorial step 11 — people in the world and what they say."
           }
         ]
-      }
+      },
+      "id": "kzu0pyfh",
+      "type": "opening"
     },
     {
-      "type": "boot",
       "assertions": {
         "contains": [
           "Zoo Entrance",
           "Your family piles out of the car, buzzing with excitement — a whole day at the zoo! You st"
         ]
-      }
+      },
+      "id": "rh72i46z",
+      "type": "boot"
     },
     {
-      "type": "turn",
-      "command": "south",
       "assertions": {
         "contains": [
           "Main Path",
           "A wide gravel path winds through the heart of the zoo. Colorful direction signs point ever"
         ]
-      }
+      },
+      "command": "south",
+      "id": "tyoxh482",
+      "type": "turn"
     },
     {
-      "type": "turn",
-      "command": "x zookeeper",
       "assertions": {
         "contains": [
           "A friendly zookeeper in khaki overalls. A name tag reads \"Sam.\""
         ]
-      }
+      },
+      "command": "x zookeeper",
+      "id": "mnxwxedk",
+      "type": "turn"
     },
     {
-      "type": "turn",
-      "command": "talk to zookeeper",
       "assertions": {
         "contains": [
           "The zookeeper doesn't respond."
         ]
-      }
+      },
+      "command": "talk to zookeeper",
+      "id": "p46rxu09",
+      "type": "turn"
     }
-  ]
+  ],
+  "id": "oy7v5joq"
 }
