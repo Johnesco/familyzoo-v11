@@ -13,7 +13,7 @@ Step 11 of sixteen in the [Family Zoo](https://github.com/Johnesco/familyzoo) tu
 
 ## The source
 
-The whole step is one file: [`familyzoo-v11.story`](./familyzoo-v11.story) — the step before it plus the ideas above. The chapter that walks through it is [`docs/v11-characters.md`](./docs/v11-characters.md).
+The whole step is one file: [`familyzoo-v11.story`](./familyzoo-v11.story) — the step before it plus the ideas above. Where it sits in the trail is on the [group page](https://johnesco.github.io/familyzoo/#familyzoo-v11).
 
 ## Playing and testing
 
