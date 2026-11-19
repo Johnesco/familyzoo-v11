@@ -11,20 +11,14 @@
             "id": "info.description",
             "is": "Sharpee tutorial step 11 — people in the world and what they say."
           }
-        ]
-      },
-      "id": "kzu0pyfh",
-      "type": "opening"
-    },
-    {
-      "assertions": {
+        ],
         "contains": [
           "Zoo Entrance",
           "Your family piles out of the car, buzzing with excitement — a whole day at the zoo! You st"
         ]
       },
-      "id": "rh72i46z",
-      "type": "boot"
+      "id": "kzu0pyfh",
+      "type": "opening"
     },
     {
       "assertions": {
